@@ -61,4 +61,5 @@ void	check_walls(t_parsing *parsing, t_vars *vars, t_directions *directions)
 	final_line = get_last_line(vars, parsing);
 	check_top_wall(parsing, vars, directions);
 	check_walls_two(parsing, vars, directions);
+	(void)final_line;
 }
