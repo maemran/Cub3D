@@ -9,6 +9,8 @@
 
 ## 🎮 About the Project
 
+![Cub3D Preview](images/screenshot.png)
+
 **Cub3D** is a **first-person 3D game** inspired by **Wolfenstein 3D**.  
 It uses a technique called **Raycasting** to transform a **2D map** into a **3D world**.
 
@@ -22,7 +24,7 @@ This project teaches:
 
 ## 🧠 Technical Concepts
 
-### 🔷 Raycasting (How we create the 3D world)
+### Raycasting (How we create the 3D world)
 Raycasting sends imaginary **rays** from the player’s camera field of view.  
 Each ray:
 - Moves forward step-by-step
@@ -32,25 +34,25 @@ Each ray:
 📌 **Closer walls** look **bigger**,  
 📌 **Farther walls** look **smaller**.
 
-This creates the illusion of 3D from a 2D grid ✅
+This creates the illusion of 3D from a 2D grid
 
 ---
 
-### 📏 DDA Algorithm (Digital Differential Analyzer)
+### DDA Algorithm (Digital Differential Analyzer)
 
 To detect collisions efficiently, we use **DDA**, which:
 - Steps ray **grid cell by grid cell**
 - Checks **only necessary positions**
 - Avoids expensive per-pixel calculations
 
-✅ Ensures:
+Ensures:
 - **Smooth performance**
 - **Fast wall detection**
 - **Accurate rendering**
 
 ---
 
-### 🗺️ Map Rules
+### 🗺️Map Rules
 
 The `.cub` file contains:
 - Wall textures
@@ -59,13 +61,14 @@ The `.cub` file contains:
 
 Example:
 
+``` bash
 111111
 100001
 1000N1
 111111
+```
 
-
-✅ Map requirements:
+Map requirements:
 - Must be **fully closed** by walls (`1`)
 - Only **one player** start position (N, S, E, W)
 - Valid characters:
@@ -86,14 +89,26 @@ Example:
 | ← / → | Rotate view direction |
 | ESC | Exit the game |
 
-Smooth movement and rotation for a realistic FPS feeling 🎮
+Smooth movement and rotation for a realistic FPS feeling
 
 ---
 
-## 🛠️ Installation & Execution
+## Installation & Execution
 
-### 📌 Compile
+### Compile the  code:
 
 ```bash
 make
+```
 
+### Run the Game:
+
+```bash
+./cub3D maps/example.cub
+```
+
+---
+
+### Development Team
+- Raycasting part: Mohammad Emran (me)
+- Parsing part: Ahmad Saade [@AhmadSaadeh03]
