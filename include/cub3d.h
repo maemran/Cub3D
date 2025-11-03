@@ -19,8 +19,8 @@
 # include <mlx.h>
 # include <stdlib.h>
 
-# define WIDTH 1500
-# define HIGHT 900
+# define WIDTH 1265
+# define HIGHT 695
 # define FOV_FACTOR 0.7071
 # define MOVESPEED 0.05
 # define ROTATSPEED 0.03
